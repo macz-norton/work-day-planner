@@ -2,7 +2,13 @@ var pastTimeBlock = document.querySelector(".past");
 var presentTimeBlock = document.querySelector(".present");
 var futureTimeBlock = document.querySelector(".future");
 
+function displayToday() {
+    var today = moment();
+    $("#currentDay").text(today.format('dddd, MMMM Do'));
+    console.log(today);
+}
 
+displayToday();
 // moment().format("MMM Do YY") 
 
 // get and store current hour and day from moment.js
@@ -23,33 +29,33 @@ var futureTimeBlock = document.querySelector(".future");
 
 // get current hour of the day via momentJS
 
-// loop oer the hours of the day from 9 to 17
-var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17]
-var = 9;
-element ID = "#hour" + i
+// // loop oer the hours of the day from 9 to 17
+// var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17]
+// var = 9;
+// element ID = "#hour" + i
 
-for (var i = 9; i <= 17; i++) {
-    if ( < currentHour){
+// for (var i = 9; i <= 17; i++) {
+//     if ( < currentHour){
 
-        // Select matching element 
-        $(Element ID) past class
+//         // Select matching element 
+//         $(Element ID) past class
 
-    } else if (9am = currentHour) {
+//     } else if (9am = currentHour) {
 
 
-    } else {
+//     } else {
 
-    }
-}
+//     }
+// }
 
-// save inputs in local storage
-// take out information in local storage
-// listens to click events on all buttons
-$("main").on("click") {
+// // save inputs in local storage
+// // take out information in local storage
+// // listens to click events on all buttons
+// $("main").on("click") {
 
-    localStorage.getItem("schedule9am", "")
+//     localStorage.getItem("schedule9am", "")
 
-}
+// }
 
 // save object in an array to save in one key
 // JSON.stringify()
