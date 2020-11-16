@@ -3,13 +3,25 @@ var presentTimeBlock = document.querySelector(".present");
 var futureTimeBlock = document.querySelector(".future");
 
 function displayToday() {
+
     var today = moment();
     $("#currentDay").text(today.format('dddd, MMMM Do'));
     console.log(today);
+    
 }
 
 displayToday();
-// moment().format("MMM Do YY") 
+
+var currentHour;
+
+function currentHour() {
+
+    currentHour = moment().hour();
+
+}
+
+currentHour();
+console.log(currentHour);
 
 // get and store current hour and day from moment.js
 // get time and format method or other methods to fetch the time
