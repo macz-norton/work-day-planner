@@ -1,5 +1,3 @@
-
-
 // Display the current date at the top of the scheduler
 function displayToday() {
 
@@ -28,14 +26,17 @@ console.log(currentHour);
 function checkHour() {
 
     for (var i = 9; i < 18; i++) {
+        // For past timeblocks
         if (i < currentHour) {
 
             $("#hour-" + i).addClass("past");
 
+        // For present timeblocks
         } else if (i = currentHour) {
 
             $("#hour-" + i).addClass("present");
 
+        // For future timeblocks
         } else {
 
             $("#hour-" + i).addClass("future");
@@ -45,6 +46,15 @@ function checkHour() {
 }
 
 checkHour();
+
+$("button").on("click", function(){
+
+    var todo9am = $("#hour-9").val();
+    var todo9amInput = JSON.stringify(todo9am);
+    localStorage.setItem("todo9am", todo9amInput)
+
+});
+
 
 // save inputs in local storage
 // take out information in local storage
