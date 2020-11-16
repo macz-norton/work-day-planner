@@ -27,24 +27,24 @@ console.log(currentHour);
 // Determine the current hour and update text area class
 function checkHour() {
 
-    for (var i = 9; i <= 17; i++) {
+    for (var i = 9; i < 18; i++) {
         if (i < currentHour) {
 
-            $("#hour-" + i).attr("class", "past" )
+            $("#hour-" + i).attr("class", "past");
 
         } else if (i = currentHour) {
 
-            $("#hour-" + i).attr("class", "present" )
+            $("#hour-" + i).attr("class", "present");
 
         } else {
 
-            $("#hour-" + i).attr("class", "future" )
+            $("#hour-" + i).attr("class", "future");
 
         }
     }
 }
 
-checkHour();
+// checkHour();
 
 // save inputs in local storage
 // take out information in local storage
