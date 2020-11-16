@@ -1,68 +1,54 @@
-var pastTimeBlock = document.querySelector(".past");
-var presentTimeBlock = document.querySelector(".present");
-var futureTimeBlock = document.querySelector(".future");
 
+
+// Display the current date at the top of the scheduler
 function displayToday() {
 
     var today = moment();
+    // Add the current day text to the `currentDay` id
     $("#currentDay").text(today.format('dddd, MMMM Do'));
     console.log(today);
-    
+
 }
 
-displayToday();
-
+// Set a global variable for the `currentHour`
 var currentHour;
 
+// Determine the current hour of the day
 function currentHour() {
 
     currentHour = moment().hour();
 
 }
 
+displayToday();
 currentHour();
 console.log(currentHour);
 
-// get and store current hour and day from moment.js
-// get time and format method or other methods to fetch the time
+// Determine the current hour and update text area class
+function checkHour() {
 
-// compare current hour of day to numbers that we're looping over
-// less than the current time and day
-// equal to the current time and day
-// greater than the current time and day
+    for (var i = 9; i <= 17; i++) {
+        if (i < currentHour) {
 
-// 9 and 17:00 hours in a for loop
+            $("#hour-" + i).attr("class", "past" )
 
-// loop over elements to determine time of day
+        } else if (i = currentHour) {
 
-// if past, set to past class
-// if present, set to present class
-// if future, set to future class
+            $("#hour-" + i).attr("class", "present" )
 
-// get current hour of the day via momentJS
+        } else {
 
-// // loop oer the hours of the day from 9 to 17
-// var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17]
-// var = 9;
-// element ID = "#hour" + i
+            $("#hour-" + i).attr("class", "future" )
 
-// for (var i = 9; i <= 17; i++) {
-//     if ( < currentHour){
+        }
+    }
+}
 
-//         // Select matching element 
-//         $(Element ID) past class
+checkHour();
 
-//     } else if (9am = currentHour) {
-
-
-//     } else {
-
-//     }
-// }
-
-// // save inputs in local storage
-// // take out information in local storage
-// // listens to click events on all buttons
+// save inputs in local storage
+// take out information in local storage
+// listens to click events on all buttons
 // $("main").on("click") {
 
 //     localStorage.getItem("schedule9am", "")
@@ -73,7 +59,7 @@ console.log(currentHour);
 // JSON.stringify()
 // JSON.parse()
 
-//OR save every hour in its own key
+// OR save every hour in its own key
 
 // go to click button to the same ID
 // dom traversal, cliked button bubbling up, access from event.target
