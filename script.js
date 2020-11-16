@@ -30,21 +30,21 @@ function checkHour() {
     for (var i = 9; i < 18; i++) {
         if (i < currentHour) {
 
-            $("#hour-" + i).attr("class", "past");
+            $("#hour-" + i).addClass("past");
 
         } else if (i = currentHour) {
 
-            $("#hour-" + i).attr("class", "present");
+            $("#hour-" + i).addClass("present");
 
         } else {
 
-            $("#hour-" + i).attr("class", "future");
+            $("#hour-" + i).addClass("future");
 
         }
     }
 }
 
-// checkHour();
+checkHour();
 
 // save inputs in local storage
 // take out information in local storage
