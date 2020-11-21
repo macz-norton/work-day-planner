@@ -4,7 +4,6 @@ function displayToday() {
     var today = moment();
     // Add the current day text to the `currentDay` id
     $("#currentDay").text(today.format('dddd, MMMM Do'));
-    console.log(today);
 
 }
 
@@ -20,7 +19,6 @@ function currentHour() {
 
 displayToday();
 currentHour();
-console.log(currentHour);
 
 // Determine the current hour and update text area class
 function checkHour() {
@@ -52,16 +50,12 @@ $("saveBtn").on("click", function(event){
 
     event.preventDefault();
 
-    var savedHour = $(".scheduleInfo").attr("id");
-    var userInput = $(".scheduleInfo").val();
-
-    console.log(savedHour);
-    console.log(userInput);
-
     var scheduleInfo = {
-        savedHour:"",
-        userInput:""
+        savedHour: $(".scheduleInfo").attr("id"),
+        userInput: $(".scheduleInfo").val()
     }
+
+    console.log(scheduleInfo);
 
     scheduleData = JSON.stringify(scheduleInfo);
 
