@@ -48,31 +48,30 @@ function checkHour() {
 
 checkHour();
 
-$("saveBtn").on("click", function(){
+$("saveBtn").on("click", function(event){
 
-    var savedHour = $("").prev().attr("id");
-    var userInput = $("description").prev().val();
+    event.preventDefault();
 
-    localStorage.setItem(savedHour, userInput);
+    var savedHour = $(".scheduleInfo").attr("id");
+    var userInput = $(".scheduleInfo").val();
+
+    console.log(savedHour);
+    console.log(userInput);
+
+    var scheduleInfo = {
+        savedHour:"",
+        userInput:""
+    }
+
+    scheduleData = JSON.stringify(scheduleInfo);
+
+    localStorage.setItem("workSchedule", scheduleData);
 
 });
 
-
-$("main").on("click") {
-
-    localStorage.getItem("schedule9am", "")
-
+for (var i = 9; i < 18; i++) {
+    $("textarea").val(localStorage.getItem("hour-" + i));
 }
-
-$("#hour-9 .description").val(localStorage.getItem("hour-9"));
-$("#hour-10 .description").val(localStorage.getItem("hour-10"));
-$("#hour-11 .description").val(localStorage.getItem("hour-11"));
-$("#hour-12 .description").val(localStorage.getItem("hour-12"));
-$("#hour-13 .description").val(localStorage.getItem("hour-13"));
-$("#hour-14 .description").val(localStorage.getItem("hour-14"));
-$("#hour-15 .description").val(localStorage.getItem("hour-15"));
-$("#hour-16 .description").val(localStorage.getItem("hour-16"));
-$("#hour-17 .description").val(localStorage.getItem("hour-17"));
 
 // save object in an array to save in one key
 // JSON.stringify()
