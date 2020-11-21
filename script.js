@@ -6,6 +6,30 @@ $("#currentDay").text(today.format('dddd, MMMM Do'));
 var currentHour;
 currentHour = moment().hour();
 
+$(".saveBtn").on("click", function(event) {
+
+    event.preventDefault();
+
+    var savedHour =  $(this).siblings("textarea").attr("id");
+    var userInput = $(this).siblings("textarea").val();
+
+    console.log(savedHour);
+    console.log(userInput);
+
+    localStorage.setItem(savedHour, userInput);
+
+});
+
+for (var i = 9; i < 18; i++) {
+
+    var workEvent = $("textarea").text(JSON.parse(localStorage.getItem("#hour-" + i)))
+    $("#hour-"+ i).text(workEvent);
+
+    if ($("#hour-"+ i).text(workEvent) === null) {
+        $("#hour-"+ i).text(" ");
+    }
+}
+
 // Determine the current hour and update text area class
 
 for (var i = 9; i < 18; i++) {
@@ -28,34 +52,6 @@ for (var i = 9; i < 18; i++) {
     // get value out of local storage and assign to text area
 }
 
-
-$("saveBtn").on("click", function(event){
-
-    event.preventDefault();
-
-    var scheduleInfo = {
-        savedHour: $(".scheduleInfo").attr("id"),
-        userInput: $(".scheduleInfo").val()
-    }
-
-    console.log(scheduleInfo);
-
-    scheduleData = JSON.stringify(scheduleInfo);
-
-    localStorage.setItem("workSchedule", scheduleData);
-
-    JSON.parse(scheduleInfo)
-
-});
-
-
-document.onload = function() {
-
-    for (var i = 9; i < 18; i++) {
-        $("textarea").localStorage.getItem("hour-" + i);
-    }
-
-}
 
 // dom traversal, cliked button bubbling up, access from event.target
 // how to go to access ID then use as value key to save correct value to correct storage
