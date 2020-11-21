@@ -20,18 +20,6 @@ $(".saveBtn").on("click", function(event) {
 
 });
 
-for (var i = 9; i < 18; i++) {
-
-    var workData = localStorage.getItem("hour-" + i);
-    console.log(workData);
-    var workEvent = $("textarea").text(workData);
-    $("#hour-${i}").text(workEvent);
-
-    if ($("#hour-${i}").text(workEvent) == null) {
-        $("#hour-${i}").text(" ");
-    }
-}
-
 // Determine the current hour and update text area class
 
 for (var i = 9; i < 18; i++) {
@@ -53,3 +41,22 @@ for (var i = 9; i < 18; i++) {
     }
     // get value out of local storage and assign to text area
 }
+
+for (var i = 9; i < 18; i++) {
+
+    var workData = localStorage.getItem("hour-" + i);
+    console.log(workData);
+
+    $("#hour-" + i).text(workData);
+
+    if ($("#hour-" + i).text() == null) {
+        $("#hour-" + i).text().empty();
+    }
+}
+
+// $(".clearStorage").on("click", function(event) {
+
+//     event.preventDefault();
+//     localStorage.clear();
+
+// }
