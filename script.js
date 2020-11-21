@@ -22,11 +22,13 @@ $(".saveBtn").on("click", function(event) {
 
 for (var i = 9; i < 18; i++) {
 
-    var workEvent = $("textarea").text(JSON.parse(localStorage.getItem("#hour-" + i)))
-    $("#hour-"+ i).text(workEvent);
+    var workData = localStorage.getItem("hour-" + i);
+    console.log(workData);
+    var workEvent = $("textarea").text(workData);
+    $("#hour-${i}").text(workEvent);
 
-    if ($("#hour-"+ i).text(workEvent) === null) {
-        $("#hour-"+ i).text(" ");
+    if ($("#hour-${i}").text(workEvent) == null) {
+        $("#hour-${i}").text(" ");
     }
 }
 
@@ -51,7 +53,3 @@ for (var i = 9; i < 18; i++) {
     }
     // get value out of local storage and assign to text area
 }
-
-
-// dom traversal, cliked button bubbling up, access from event.target
-// how to go to access ID then use as value key to save correct value to correct storage
