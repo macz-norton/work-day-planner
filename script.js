@@ -54,9 +54,9 @@ for (var i = 9; i < 18; i++) {
     }
 }
 
-// $(".clearStorage").on("click", function(event) {
+$(".clearStorage").on("click", function(event) {
 
-//     event.preventDefault();
-//     localStorage.clear();
+    // event.preventDefault();
+    localStorage.clear();
 
-// }
+});
