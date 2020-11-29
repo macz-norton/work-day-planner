@@ -6,15 +6,13 @@ $("#currentDay").text(today.format('dddd, MMMM Do'));
 var currentHour;
 currentHour = moment().hour();
 
+// Save `savedHour` and `userInput` in local storage
 $(".saveBtn").on("click", function(event) {
 
     event.preventDefault();
 
     var savedHour =  $(this).siblings("textarea").attr("id");
     var userInput = $(this).siblings("textarea").val();
-
-    console.log(savedHour);
-    console.log(userInput);
 
     localStorage.setItem(savedHour, userInput);
 
@@ -39,9 +37,9 @@ for (var i = 9; i < 18; i++) {
         $("#hour-" + i).addClass("future");
 
     }
-    // get value out of local storage and assign to text area
 }
 
+// Get `workData` out of local storage and assign to text area
 for (var i = 9; i < 18; i++) {
 
     var workData = localStorage.getItem("hour-" + i);
@@ -54,6 +52,7 @@ for (var i = 9; i < 18; i++) {
     }
 }
 
+// Reload the page and clear the planner's saved events
 $(".clearStorage").on("click", function(event) {
 
     localStorage.clear();
