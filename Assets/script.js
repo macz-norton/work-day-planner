@@ -56,7 +56,7 @@ for (var i = 9; i < 18; i++) {
 
 $(".clearStorage").on("click", function(event) {
 
-    // event.preventDefault();
     localStorage.clear();
+    location.reload();
 
 });
