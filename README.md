@@ -1,6 +1,5 @@
 # Work Day Planner
-![Last Commit](https://img.shields.io/github/last-commit/macz-norton/semantic-accessibility-webpage-refactor)
-![GitHub repo file count](https://img.shields.io/github/directory-file-count/macz-norton/work-day-scheduler)
+![Last Commit](https://img.shields.io/github/last-commit/macz-norton/work-day-scheduler)
 
 ## Description
 
@@ -27,7 +26,7 @@ No installation required.
 
 When you open the planner, the current day displays at the top of the work day planner. The timeblocks represent standard business hours. 
 
-Link to the deployed application: 
+Link to the deployed application: https://macz-norton.github.io/work-day-planner/
 
 This gif demonstrates the application functionality:
 [A user clicks on the timeblocks of the color-coded planner, edits, then saves the events]()
