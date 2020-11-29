@@ -1,4 +1,6 @@
 # Work Day Planner
+![Last Commit](https://img.shields.io/github/last-commit/macz-norton/semantic-accessibility-webpage-refactor)
+![GitHub repo file count](https://img.shields.io/github/directory-file-count/macz-norton/work-day-scheduler)
 
 ## Description
 
