@@ -31,6 +31,7 @@ When you open the planner, the current day displays at the top of the workday sc
 2. When you click a timeblock, you can type an event.
 3. When you click the save button for the timeblock, the text for that event is saved in local storage.
 4. When you refresh the page, the saved events persist.
+5. When you click the clear schedule button, the page reloads and the schedule's events clear.
 
 This gif demonstrates the application functionality:
 [A user clicks on the timeblocks of the color-coded schedule, edits, then saves the events]()
@@ -42,8 +43,6 @@ This gif demonstrates the application functionality:
 * [Bootstrap](https://getbootstrap.com/)
 * [FontAwesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
-
-
 
 ## License
 
