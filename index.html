@@ -4,34 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS framework -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./Assets/CSS/style.css" />
-    <title>Workday Scheduler</title>
+    <title>Work Day Planner</title>
   </head>
 
   <body>
 
+    <!-- Jumbotron heading section -->
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">Work Day Planner</h1>
       <p class="lead description">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
 
+    <!-- Main container to hold timeblocks -->
     <main class="container">
 
+      <!-- 9AM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">9AM</p>
         <textarea class="col-8" id="hour-9" placeholder="Add an event"></textarea>
@@ -40,6 +51,7 @@
         </button>
       </section>
 
+      <!-- 10AM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">10AM</p>
         <textarea class="col-8" id="hour-10" placeholder="Add an event"></textarea>
@@ -48,6 +60,7 @@
         </button>
       </section>
 
+      <!-- 11AM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">11AM</p>
         <textarea class="col-8" id="hour-11" placeholder="Add an event"></textarea>
@@ -56,6 +69,7 @@
         </button>
       </section>
 
+      <!-- 12PM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">12PM</p>
         <textarea class="col-8" id="hour-12" placeholder="Add an event"></textarea>
@@ -64,6 +78,7 @@
         </button>
       </section>
 
+      <!-- 1PM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">1PM</p>
         <textarea class="col-8" id="hour-13" placeholder="Add an event"></textarea>
@@ -72,6 +87,7 @@
         </button>
       </section>
 
+      <!-- 2PM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">2PM</p>
         <textarea class="col-8" id="hour-14" placeholder="Add an event"></textarea>
@@ -80,6 +96,7 @@
         </button>
       </section>
 
+      <!-- 3PM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">3PM</p>
         <textarea class="col-8" id="hour-15" placeholder="Add an event"></textarea>
@@ -88,6 +105,7 @@
         </button>
       </section>
 
+      <!-- 4PM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">4PM</p>
         <textarea class="col-8" id="hour-16" placeholder="Add an event"></textarea>
@@ -96,6 +114,7 @@
         </button>
       </section>
 
+      <!-- 5PM timeblock -->
       <section class="row justify-content-center">
         <p class="hour pt-2 col-1">5PM</p>
         <textarea class="col-8" id="hour-17" placeholder="Add an event"></textarea>
@@ -104,16 +123,20 @@
         </button>
       </section>
 
+      <!-- Clear Planner button -->
       <section class="d-flex justify-content-center jumbotron">
         <button class="btn btn-primary clearStorage" type="submit">
-          <p class="mb-0">Clear Schedule</p>
+          <p class="mb-0">Clear Planner</p>
         </button>
       </section>
 
     </main>
 
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- JavaScript file -->
     <script src="./Assets/script.js"></script>
 
   </body>

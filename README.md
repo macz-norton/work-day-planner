@@ -1,8 +1,8 @@
-# Workday Planner
+# Work Day Planner
 
 ## Description
 
-The workday planner is a simple calendar application that allows the user to save events for each hour of the work day. The app runs in the browser and uses dynamically updated HTML and CSS powered by jQuery.
+The work day planner is a simple calendar application that allows the user to save events for each hour of the work day. The app runs in the browser and uses dynamically updated HTML and CSS powered by jQuery.
 
 ```
 AS AN employee with a busy schedule
@@ -23,7 +23,12 @@ No installation required.
 
 ## Usage
 
-When you open the planner, the current day displays at the top of the workday planner. The timeblocks represent standard business hours. 
+When you open the planner, the current day displays at the top of the work day planner. The timeblocks represent standard business hours. 
+
+Link to the deployed application: 
+
+This gif demonstrates the application functionality:
+[A user clicks on the timeblocks of the color-coded planner, edits, then saves the events]()
 
 ### Tests
 
@@ -33,15 +38,12 @@ When you open the planner, the current day displays at the top of the workday pl
 4. When you refresh the page, the saved events persist.
 5. When you click the clear planner button, the page reloads and the planner's events clear.
 
-This gif demonstrates the application functionality:
-[A user clicks on the timeblocks of the color-coded planner, edits, then saves the events]()
-
 ## Credits
 
 * [Moment.js library](https://momentjs.com/)
 * [jQuery API](https://api.jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
-* [FontAwesome](https://fontawesome.com/)
+* [Font Awesome](https://fontawesome.com/)
 * [Google Fonts](https://fonts.google.com/)
 
 ## License
