@@ -39,6 +39,11 @@ This gif demonstrates the application functionality:
 
 * [Moment.js library](https://momentjs.com/)
 * [jQuery API](https://api.jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [FontAwesome](https://fontawesome.com/)
+* [Google Fonts](https://fonts.google.com/)
+
+
 
 ## License
 
