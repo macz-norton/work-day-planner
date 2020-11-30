@@ -25,10 +25,8 @@ No installation required.
 ## Usage
 
 When you open the planner, the current day displays at the top of the work day planner. The timeblocks represent standard business hours. 
-
-Link to the deployed application: https://macz-norton.github.io/work-day-planner/
-
-This gif demonstrates the application's functionality:
+* Link to the deployed application: https://macz-norton.github.io/work-day-planner/
+* Gif that demonstrates the application's functionality:
 ![A user clicks on the timeblocks of the color-coded planner, edits, then saves the events](https://user-images.githubusercontent.com/71162422/100556865-18d52780-325a-11eb-9c90-81c5ce5ab201.gif)
 
 ### Tests
