@@ -15,6 +15,7 @@ SO THAT I can manage my time effectively.
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Tests](#tests)
 * [Credits](#credits)
 * [License](#license)
 
@@ -29,7 +30,7 @@ When you open the planner, the current day displays at the top of the work day p
 * Gif that demonstrates the application's functionality:
 ![A user clicks on the timeblocks of the color-coded planner, edits, then saves the events](https://user-images.githubusercontent.com/71162422/100556865-18d52780-325a-11eb-9c90-81c5ce5ab201.gif)
 
-### Tests
+## Tests
 
 1. When you view timeblocks for the day, each timeblock is color coded to indicate where it is in the past (gray), present (red), or future (green).
 2. When you click a timeblock, you can type an event.
