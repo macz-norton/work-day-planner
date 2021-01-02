@@ -48,4 +48,4 @@ When you open the planner, the current day displays at the top of the work day p
 
 ## License
 
-None
+[MIT](https://choosealicense.com/licenses/mit/)
